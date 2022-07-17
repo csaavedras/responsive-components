@@ -98,16 +98,18 @@ nav {
 @media (max-width: 35em) {
   nav {
     flex-direction: column;
-    justify-content: start;
     position: relative;
     inset: 0 0 0 0;
     background-color: var(--optionColor5);
-    padding: 3rem 0;
+    padding: 3rem;
     z-index: 1000;
   }
   .flex {
     flex-direction: column;
     padding: 0;
+  }
+  .logo {
+    display: none;
   }
 }
 .mobile-nav-toggle {
