@@ -13,19 +13,20 @@
 body {
   margin: 0;
   padding: 0;
-  display: grid;
-  justify-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: var(--optionColor1);
   background-color: var(--optionColor2);
 }
 button {
-  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
   background-color: var(--optionColor1);
   color: white;
 }
 .main_container {
   display: flex;
+  justify-content: center;
   gap: 50px;
 }
 .container {
@@ -63,4 +64,41 @@ button {
   background-color: transparent;
   border: 2px solid var(--optionColor1);
   color: var(--optionColor1);
+}
+
+/* <----- MARK: NAVBAR SECTION -----> */
+
+/* Remove list styles on ul */
+ul {
+  list-style: none;
+}
+/* Remove text-decoration styles on a  */
+a {
+  text-decoration: none;
+  color: var(--optionColor2);
+}
+p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--optionColor2);
+}
+nav {
+  background-color: var(--optionColor1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 2em;
+  font-size: calc(1vh + 0.9vmin);
+}
+.flex {
+  display: flex;
+  gap: var(--gap, 2rem);
+}
+
+@media (max-width: 35em) {
+  nav {
+    position: fixed;
+    inset: 0 0 0 50%;
+    background-color: var(--optionColor5);
+  }
 }
