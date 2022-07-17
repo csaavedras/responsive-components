@@ -13,6 +13,10 @@ nav {
 }
 
 @media (max-width: 35em) {
+  li a {
+    display: none;
+  }
+  /*
   nav {
     flex-direction: column;
     position: relative;
@@ -27,9 +31,11 @@ nav {
   }
   .logo {
     display: none;
-  }
+  }*/
 }
+
 .mobile-nav-toggle {
+  display: none;
   position: absolute;
   top: 2rem;
   right: 2rem;
