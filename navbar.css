@@ -1,0 +1,45 @@
+/* <----- MARK: NAVBAR SECTION -----> */
+nav {
+  background-color: var(--optionColor1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 2em;
+  font-size: 1em;
+}
+.flex {
+  display: flex;
+  gap: var(--gap, 2rem);
+}
+
+@media (max-width: 35em) {
+  nav {
+    flex-direction: column;
+    position: relative;
+    inset: 0 0 0 0;
+    background-color: var(--optionColor5);
+    padding: 3rem;
+    z-index: 1000;
+  }
+  .flex {
+    flex-direction: column;
+    padding: 0;
+  }
+  .logo {
+    display: none;
+  }
+}
+.mobile-nav-toggle {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 9999;
+  cursor: pointer;
+}
+.line {
+  width: 1.5rem;
+  height: 0.3rem;
+  border: 0;
+  background-color: white;
+  margin-bottom: 0.2em;
+}

@@ -1,29 +1,3 @@
-:root {
-  --optionColor1: #0d3b66;
-  --optionColor2: #faf0ca;
-  --optionColor3: #f4d35e;
-  --optionColor4: #ee964b;
-  --optionColor5: #f95738;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: var(--optionColor1);
-  background-color: var(--optionColor2);
-}
-button {
-  cursor: pointer;
-  text-decoration: none;
-  border: 0;
-  background-color: var(--optionColor1);
-  color: white;
-}
 .main_container {
   display: flex;
   justify-content: center;
@@ -38,6 +12,8 @@ button {
   /* Using calc to append 'rem' to a unitless custom property*/
   font-size: calc(var(--scale) * 1rem);
   padding: 0.5em 1.25em;
+  background-color: var(--optionColor1);
+  color: white;
   /* rest of the style */
 }
 
@@ -66,63 +42,3 @@ button {
   color: var(--optionColor1);
 }
 
-/* <----- MARK: NAVBAR SECTION -----> */
-
-/* Remove list styles on ul */
-ul {
-  list-style: none;
-}
-/* Remove text-decoration styles on a  */
-a {
-  text-decoration: none;
-  color: var(--optionColor2);
-}
-p {
-  font-size: 1rem;
-  font-weight: bold;
-  color: var(--optionColor2);
-}
-nav {
-  background-color: var(--optionColor1);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-inline: 2em;
-  font-size: 1em;
-}
-.flex {
-  display: flex;
-  gap: var(--gap, 2rem);
-}
-
-@media (max-width: 35em) {
-  nav {
-    flex-direction: column;
-    position: relative;
-    inset: 0 0 0 0;
-    background-color: var(--optionColor5);
-    padding: 3rem;
-    z-index: 1000;
-  }
-  .flex {
-    flex-direction: column;
-    padding: 0;
-  }
-  .logo {
-    display: none;
-  }
-}
-.mobile-nav-toggle {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  z-index: 9999;
-  cursor: pointer;
-}
-.line {
-  width: 1.5rem;
-  height: 0.3rem;
-  border: 0;
-  background-color: white;
-  margin-bottom: 0.2em;
-}
