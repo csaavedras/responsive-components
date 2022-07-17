@@ -88,7 +88,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding-inline: 2em;
-  font-size: calc(1vh + 0.9vmin);
+  font-size: 1em;
 }
 .flex {
   display: flex;
@@ -97,8 +97,16 @@ nav {
 
 @media (max-width: 35em) {
   nav {
-    position: fixed;
-    inset: 0 0 0 50%;
+    flex-direction: column;
+    justify-content: start;
+    position: relative;
+    inset: 0 0 0 0;
     background-color: var(--optionColor5);
+    padding: 3rem 0;
+  }
+  .flex {
+    flex-direction: column;
+    padding: 0;
   }
 }
+
