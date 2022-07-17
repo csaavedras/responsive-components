@@ -1,0 +1,23 @@
+@import url('main.css');
+
+/* RESPONSIVE LAYOUT */
+/* MARK: LESSON using percentages and avoiding height */
+.parent {
+  background-color: var(--optionColor5);
+  padding: 10px;
+
+  /* DEFAULT VALUE
+  width: 100%;
+
+  Examples for diferent size of your container: 
+  width: 90%;
+  width: 80%;
+  width: 50%;
+  width: 20%;
+  */
+}
+.child {
+  background-color: var(--optionColor1);
+  color: white;
+  padding: 2em;
+}

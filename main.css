@@ -36,3 +36,6 @@ p {
   font-weight: bold;
   color: var(--optionColor2);
 }
+.hidden {
+  display: none;
+}
