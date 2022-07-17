@@ -103,10 +103,24 @@ nav {
     inset: 0 0 0 0;
     background-color: var(--optionColor5);
     padding: 3rem 0;
+    z-index: 1000;
   }
   .flex {
     flex-direction: column;
     padding: 0;
   }
 }
-
+.mobile-nav-toggle {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 9999;
+  cursor: pointer;
+}
+.line {
+  width: 1.5rem;
+  height: 0.3rem;
+  border: 0;
+  background-color: white;
+  margin-bottom: 0.2em;
+}
